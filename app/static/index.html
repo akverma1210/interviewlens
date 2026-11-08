@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="InterviewLens is a focused practice space for better interview answers.">
+  <title>InterviewLens - Practice with purpose</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-route="home" aria-label="InterviewLens home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>interview<span>lens</span></span>
+      </a>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-route="home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm10 0h6v-9h-6v9Zm0-16v5h6V4h-6Z"/></svg>
+          Overview
+        </button>
+        <button class="nav-item" data-route="new">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          New practice
+        </button>
+        <button class="nav-item" data-route="progress">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 5-5 4 4 7-8M15 7h5v5"/></svg>
+          Your progress
+        </button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="privacy-note">
+        <div class="privacy-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.9 8.4 7 10 4.1-1.6 7-5.4 7-10V6l-7-3Zm-3 9 2 2 4-5"/></svg>
+        </div>
+        <strong>Your practice, your data</strong>
+        <p>Saved in your own database. Gemini is used only when you configure it.</p>
+      </div>
+      <div class="profile">
+        <div class="avatar">AV</div>
+        <div><strong>Anand's workspace</strong><span>Personal practice</span></div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark"><span></span></span>interviewlens</div>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="page-label">Overview</strong></div>
+        <div class="engine-pill" id="engine-status"><span></span>Checking engine</div>
+      </header>
+      <div id="app" class="page-content" aria-live="polite"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="alert"></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
