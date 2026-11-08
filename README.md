@@ -1,5 +1,9 @@
 # InterviewLens
 
+**Live demo:** [Open InterviewLens](https://interviewlens-egok.onrender.com/)
+
+Try the hosted demo without installing anything. It has no sign-in, so everyone with the link shares one workspace; don't enter private answers. The free service may take about a minute to wake after 15 minutes idle, and saved sessions can reset. The demo uses the built-in rubric; Gemini is not configured.
+
 A full-stack interview practice app that turns written answers into specific, actionable coaching. Create a role-focused practice run, answer technical and behavioral questions, and track your progress across four communication and engineering signals.
 
 InterviewLens works out of the box with a transparent local scoring rubric. You can optionally configure Gemini for AI-enhanced feedback; the interface always shows which engine reviewed an answer.
@@ -37,9 +41,7 @@ python -m pip install -r requirements.txt
 python -m uvicorn app.main:app --reload
 ```
 
-Keep this command running, then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in a browser **on the same computer**. The SQLite database is created automatically on first run.
-
-**Important:** `127.0.0.1` means "this device". It is not a public app link. Opening it on your phone or another computer will cause a connection error unless the app is running there. To use InterviewLens on other devices, deploy it to a hosting service first.
+Keep the server running, then open `http://127.0.0.1:8000` in a browser on the same computer. This address points to the computer running the server; it is not a public or phone link. For the hosted demo, use the Live demo link at the top. The SQLite database is created automatically on first run.
 
 ### Optional Gemini setup
 
