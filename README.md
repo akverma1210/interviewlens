@@ -29,15 +29,17 @@ InterviewLens works out of the box with a transparent local scoring rubric. You 
 ## Quick start
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/akverma1210/interviewlens.git
 cd interviewlens
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+python -m pip install -r requirements.txt
+python -m uvicorn app.main:app --reload
 ```
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000). The SQLite database is created automatically on first run.
+Keep this command running, then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in a browser **on the same computer**. The SQLite database is created automatically on first run.
+
+**Important:** `127.0.0.1` means "this device". It is not a public app link. Opening it on your phone or another computer will cause a connection error unless the app is running there. To use InterviewLens on other devices, deploy it to a hosting service first.
 
 ### Optional Gemini setup
 
