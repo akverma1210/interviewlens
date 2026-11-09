@@ -118,6 +118,11 @@ tests/
 - Gemini is opt-in and uses a server-side API key.
 - Use a production-grade database, HTTPS, authentication, rate limiting, and managed secrets before deploying this as a multi-user service.
 
-## License
+## Copyright, attribution and license
 
-MIT
+**Original author:** [Anand Kishor Verma](https://github.com/akverma1210)  
+**Original repository:** [akverma1210/interviewlens](https://github.com/akverma1210/interviewlens)
+
+Copyright (c) 2026 Anand Kishor Verma. This project is available under the [MIT License](LICENSE).
+
+The MIT License permits copying, modification and redistribution, and requires the copyright and permission notices in `LICENSE` to be included in all copies or substantial portions of the software. Keep that file intact when reusing or sharing this project. Credit to the original author and a link back to this repository are appreciated, but the license does not require a public contributor credit and these notices cannot prevent copying.
